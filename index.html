@@ -16,16 +16,16 @@
         var decodedString = '';//atob(string);
         switch(target) {
             case 'split':
-                decodedString = string_split;
+                decodedString = atob(string_split);
                 break;
             case 'rtr':
-                decodedString = string_rtr;
+                decodedString = atob(string_rtr);
                 break;
             case 'lkl':
-                decodedString = string_lkl;
+                decodedString = atob(string_lkl);
                 break;
             default:
-                decodedString = string_rtr;
+                decodedString = atob(string_rtr);
                 
         }        
         document.write(''+ decodedString +'');
